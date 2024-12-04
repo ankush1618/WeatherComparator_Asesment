@@ -10,6 +10,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import ui.AccuWeatherUI;
+import utils.ConfigReader;
 import utils.Log;
 
 public class WeatherComparisonTest {
@@ -30,10 +31,10 @@ public class WeatherComparisonTest {
     @Test
     public void compareWeather() throws InterruptedException {
         test = extent.createTest("Weather Comparison Test");
-        String city = "London";
-        double allowedVariance = 2.0;
+        String city = ConfigReader.getProperty("city");
+        double allowedVariance = Double.parseDouble(ConfigReader.getProperty("allowedVariance"));
 
-        Log.info("Starting weather comparison test for city: " + city);
+        test.info("Starting weather comparison test for city: " + city);
 
         AccuWeatherUI ui = new AccuWeatherUI();
         OpenWeatherAPI api = new OpenWeatherAPI();
@@ -42,20 +43,21 @@ public class WeatherComparisonTest {
         try {
             Log.info("Fetching temperature from UI...");
             double tempUI = ui.getTemperature(city);
-            Log.info("Temperature from UI: " + tempUI);
+            test.info("Temperature from UI: " + tempUI);
 
             Log.info("Fetching temperature from API...");
             double tempAPI = api.getTemperature(city);
-            Log.info("Temperature from API: " + tempAPI);
+            test.info("Temperature from API: " + tempAPI);
 
             Log.info("Comparing temperatures...");
             comparator.compareTemperatures(tempUI, tempAPI, allowedVariance);
 
             test.pass("Weather comparison test passed. UI: " + tempUI + ", API: " + tempAPI);
-            Log.info("Weather comparison test passed.");
+            test.info("Weather comparison test passed.");
         } catch (Exception e) {
             test.fail("Weather comparison test failed: " + e.getMessage());
             Log.error("Test failed: " + e.getMessage());
+            test.fail("Test failed: " + e.getMessage());
             throw e;
         }
     }
