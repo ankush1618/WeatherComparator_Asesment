@@ -33,8 +33,8 @@ public class WeatherComparisonTest {
         test = extent.createTest("Weather Comparison Test");
 
         // Fetch parameters
-        String city = getParameter("CITY", ConfigReader.getProperty("city")); // Jenkins parameter or properties file
-        double allowedVariance = Double.parseDouble(getParameter("ALLOWED_VARIANCE", ConfigReader.getProperty("allowedVariance")));
+        String city = System.getProperty("CITY", ConfigReader.getProperty("city")); // Jenkins parameter or properties file
+        double allowedVariance = Double.parseDouble(System.getProperty("ALLOWED_VARIANCE", ConfigReader.getProperty("allowedVariance")));
 
         test.info("Starting weather comparison test for city: " + city);
 
