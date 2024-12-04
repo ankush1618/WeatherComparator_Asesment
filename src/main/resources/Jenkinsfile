@@ -45,11 +45,11 @@ pipeline {
         }
         success {
             // Publish JUnit Test Reports
-            junit '**/target/test-*.xml'  // Adjust path to your actual test reports
+            junit '**/target/surefire-reports/*.xml'  // Adjust path to your actual test reports
 
             // Publish HTML Report (if using custom HTML reports)
-            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true,
-                         reportDir: 'target/site/serenity', reportFiles: 'index.html', reportName: 'Serenity Report'])
+            ppublishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true,
+                          reportDir: 'target/test-output', reportFiles: 'ExtentReport.html', reportName: 'Extent Report'])
         }
         failure {
             echo "Build failed"
