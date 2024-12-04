@@ -1,0 +1,58 @@
+pipeline {
+    agent any  // This tells Jenkins to run the pipeline on any available agent
+
+    environment{
+        listEmails="singhpalankush@gmail.com"
+    }
+
+    parameters {
+        // Parameters to pass values from Jenkins UI when triggering the pipeline
+        string(description: "Added branch to deploy", defaultValue:'master', name:'branchname')
+        string(name: 'CITY', defaultValue: 'London', description: 'City for Weather Test')
+        string(name: 'ALLOWED_VARIANCE', defaultValue: '2.0', description: 'Allowed Temperature Variance')
+    }
+
+    tools{
+        //  Use the installed JDK named 'jdk'
+        jdk 'jdk'
+        //  Install the Maven project configured
+        maven 'mvn'
+    }
+
+    stages {
+        stage('Git Checkout') {
+            steps {
+                // This step fetches the code from the Git repository
+                git branch: "${params.branchname}", changelog: false, credentialsId:'Github', poll:false, url: 'https://github.com/ankush1618/WeatherComparator_Assessment.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                // This step runs Maven to build the project (download dependencies, compile, etc.)
+                bat 'mvn clean install'  // Runs Maven to clean and install dependencies
+            }
+        }
+
+
+    }
+
+    post {
+        // This section defines post-build actions
+        always {
+            // Clean up, report, or other actions after pipeline run
+            echo "Pipeline finished"
+        }
+        success {
+            // Publish JUnit Test Reports
+            junit '**/target/test-*.xml'  // Adjust path to your actual test reports
+
+            // Publish HTML Report (if using custom HTML reports)
+            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true,
+                         reportDir: 'target/site/serenity', reportFiles: 'index.html', reportName: 'Serenity Report'])
+        }
+        failure {
+            echo "Build failed"
+        }
+    }
+}

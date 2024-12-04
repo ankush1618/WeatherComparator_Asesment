@@ -31,8 +31,10 @@ public class WeatherComparisonTest {
     @Test
     public void compareWeather() throws InterruptedException {
         test = extent.createTest("Weather Comparison Test");
-        String city = ConfigReader.getProperty("city");
-        double allowedVariance = Double.parseDouble(ConfigReader.getProperty("allowedVariance"));
+
+        // Fetch parameters
+        String city = getParameter("CITY", ConfigReader.getProperty("city")); // Jenkins parameter or properties file
+        double allowedVariance = Double.parseDouble(getParameter("ALLOWED_VARIANCE", ConfigReader.getProperty("allowedVariance")));
 
         test.info("Starting weather comparison test for city: " + city);
 
@@ -57,9 +59,20 @@ public class WeatherComparisonTest {
         } catch (Exception e) {
             test.fail("Weather comparison test failed: " + e.getMessage());
             Log.error("Test failed: " + e.getMessage());
-            test.fail("Test failed: " + e.getMessage());
             throw e;
         }
+    }
+
+    /**
+     * Helper method to fetch Jenkins parameter or default to properties file value.
+     *
+     * @param paramName    Jenkins parameter name
+     * @param defaultValue Default value from properties file
+     * @return Parameter value
+     */
+    private String getParameter(String paramName, String defaultValue) {
+        String paramValue = System.getProperty(paramName); // Fetch from Jenkins
+        return (paramValue != null && !paramValue.isEmpty()) ? paramValue : defaultValue;
     }
 
     @AfterClass
