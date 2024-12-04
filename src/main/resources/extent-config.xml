@@ -1,0 +1,5 @@
+<configuration>
+    <reportName>Weather Comparison Test Report</reportName>
+    <documentTitle>Weather Comparator Automation</documentTitle>
+    <theme>dark</theme>
+</configuration>

@@ -1,0 +1,88 @@
+2024-12-04 02:23:46 [main] INFO  utils.Log - Starting weather comparison test for city: New York
+2024-12-04 02:26:11 [main] INFO  utils.Log - Starting weather comparison test for city: New York
+2024-12-04 02:32:04 [main] INFO  utils.Log - Starting weather comparison test for city: New York
+2024-12-04 02:32:07 [main] INFO  utils.Log - Fetching temperature from UI...
+2024-12-04 02:32:11 [main] ERROR utils.Log - Test failed: no such element: Unable to locate element: {"method":"css selector","selector":".search-button"}
+  (Session info: chrome=131.0.6778.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2a7a2a6d20e2a04f870db6098e38209a, findElement {using=css selector, value=.search-button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\komal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49744}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49744/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a7a2a6d20e2a04f870db6098e38209a
+2024-12-04 02:33:22 [main] INFO  utils.Log - Starting weather comparison test for city: New York
+2024-12-04 02:33:24 [main] INFO  utils.Log - Fetching temperature from UI...
+2024-12-04 02:33:28 [main] ERROR utils.Log - Test failed: no such element: Unable to locate element: {"method":"css selector","selector":".search-button"}
+  (Session info: chrome=131.0.6778.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [60ae907bca9095feaf027bb08852ea94, findElement {using=css selector, value=.search-button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\komal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50384}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50384/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 60ae907bca9095feaf027bb08852ea94
+2024-12-04 02:43:15 [main] INFO  utils.Log - Starting weather comparison test for city: New York
+2024-12-04 02:43:18 [main] INFO  utils.Log - Fetching temperature from UI...
+2024-12-04 02:43:36 [main] ERROR utils.Log - Test failed: Expected condition failed: waiting for element to be clickable: By.cssSelector: .search-button (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\komal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51243}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51243/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a7b52793dac594e58ac9e51f0dcd43d3
+2024-12-04 02:44:35 [main] INFO  utils.Log - Starting weather comparison test for city: New York
+2024-12-04 02:44:38 [main] INFO  utils.Log - Fetching temperature from UI...
+2024-12-04 02:52:55 [main] INFO  utils.Log - Starting weather comparison test for city: New York
+2024-12-04 02:52:58 [main] INFO  utils.Log - Fetching temperature from UI...
+2024-12-04 03:00:53 [main] INFO  utils.Log - Starting weather comparison test for city: New York
+2024-12-04 03:00:55 [main] INFO  utils.Log - Fetching temperature from UI...
+2024-12-04 03:04:08 [main] INFO  utils.Log - Starting weather comparison test for city: New York
+2024-12-04 03:04:10 [main] INFO  utils.Log - Fetching temperature from UI...
+2024-12-04 03:04:26 [main] ERROR utils.Log - Test failed: Expected condition failed: waiting for visibility of element located by By.xpath: //a[@class='header-city-link']//span[text()='5°'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\komal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53932}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53932/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bb5b53afff72388cc0bb615b35145f29
+2024-12-04 03:06:09 [main] INFO  utils.Log - Starting weather comparison test for city: New York
+2024-12-04 03:06:11 [main] INFO  utils.Log - Fetching temperature from UI...
+2024-12-04 03:08:21 [main] ERROR utils.Log - Test failed: For input string: "5C"
+2024-12-04 03:08:46 [main] INFO  utils.Log - Starting weather comparison test for city: New York
+2024-12-04 03:08:48 [main] INFO  utils.Log - Fetching temperature from UI...
+2024-12-04 03:09:01 [main] ERROR utils.Log - Test failed: element click intercepted: Element <p class="location-name">...</p> is not clickable at point (467, 129). Other element would receive the click: <div class="locations-list content-module" data-increment="10">...</div>
+  (Session info: chrome=131.0.6778.86)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ad984c433703ca30adbe58176b474243, clickElement {id=f.0FA8CFE90FE15FB5A6648CD829D36B74.d.FF045A76A520F5E8F5A10967BC1B55A6.e.32}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\komal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54540}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54540/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ad984c433703ca30adbe58176b474243)] -> xpath: (//p[text()='New York'])[1]]
+Session ID: ad984c433703ca30adbe58176b474243
+2024-12-04 03:10:52 [main] INFO  utils.Log - Starting weather comparison test for city: New York
+2024-12-04 03:10:55 [main] INFO  utils.Log - Fetching temperature from UI...
+2024-12-04 03:11:07 [main] ERROR utils.Log - Test failed: For input string: "5C"
+2024-12-04 03:14:16 [main] INFO  utils.Log - Starting weather comparison test for city: New York
+2024-12-04 03:14:19 [main] INFO  utils.Log - Fetching temperature from UI...
+2024-12-04 03:14:33 [main] INFO  utils.Log - Temperature from UI: 5.0
+2024-12-04 03:14:33 [main] INFO  utils.Log - Fetching temperature from API...
+2024-12-04 03:14:37 [main] INFO  utils.Log - Temperature from API: 4.59
+2024-12-04 03:14:37 [main] INFO  utils.Log - Comparing temperatures...
+2024-12-04 03:14:37 [main] INFO  utils.Log - Weather comparison test passed.
+2024-12-04 03:17:44 [main] INFO  utils.Log - Starting weather comparison test for city: New York
+2024-12-04 03:17:47 [main] INFO  utils.Log - Fetching temperature from UI...
+2024-12-04 03:17:59 [main] ERROR utils.Log - Test failed: element click intercepted: Element <p class="location-name">...</p> is not clickable at point (467, 129). Other element would receive the click: <div class="locations-list content-module" data-increment="10">...</div>
+  (Session info: chrome=131.0.6778.86)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b5007032e1a750098ff71d7ba3be955, clickElement {id=f.798E8582330165F1BF58E6FE78EF4515.d.04D8B5CF7EE481A9659A313B339F8168.e.37}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\komal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55341}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55341/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4b5007032e1a750098ff71d7ba3be955)] -> xpath: (//p[text()='New York'])[1]]
+Session ID: 4b5007032e1a750098ff71d7ba3be955
+2024-12-04 03:20:21 [main] INFO  utils.Log - Starting weather comparison test for city: New York
+2024-12-04 03:20:24 [main] INFO  utils.Log - Fetching temperature from UI...
+2024-12-04 03:20:42 [main] INFO  utils.Log - Temperature from UI: 5.0
+2024-12-04 03:20:42 [main] INFO  utils.Log - Fetching temperature from API...
+2024-12-04 03:27:03 [main] INFO  utils.Log - Temperature from API: 4.59
+2024-12-04 03:27:04 [main] INFO  utils.Log - Comparing temperatures...
+2024-12-04 03:27:43 [main] INFO  utils.Log - Weather comparison test passed.
