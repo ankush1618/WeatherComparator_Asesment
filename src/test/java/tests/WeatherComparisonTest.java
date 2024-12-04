@@ -30,7 +30,7 @@ public class WeatherComparisonTest {
     @Test
     public void compareWeather() throws InterruptedException {
         test = extent.createTest("Weather Comparison Test");
-        String city = "New York";
+        String city = "London";
         double allowedVariance = 2.0;
 
         Log.info("Starting weather comparison test for city: " + city);

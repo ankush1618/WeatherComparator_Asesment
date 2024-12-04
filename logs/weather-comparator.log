@@ -86,3 +86,55 @@ Session ID: 4b5007032e1a750098ff71d7ba3be955
 2024-12-04 03:27:03 [main] INFO  utils.Log - Temperature from API: 4.59
 2024-12-04 03:27:04 [main] INFO  utils.Log - Comparing temperatures...
 2024-12-04 03:27:43 [main] INFO  utils.Log - Weather comparison test passed.
+2024-12-04 13:27:39 [main] INFO  utils.Log - Starting weather comparison test for city: New York
+2024-12-04 13:27:41 [main] INFO  utils.Log - Fetching temperature from UI...
+2024-12-04 13:28:15 [main] ERROR utils.Log - Test failed: Expected condition failed: waiting for visibility of element located by By.xpath: //a[@class='header-city-link']//span[text()='5°'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\komal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61176}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61176/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ce395d9aa9f91c1297e473ffd82274b9
+2024-12-04 13:31:39 [main] INFO  utils.Log - Starting weather comparison test for city: New York
+2024-12-04 13:31:40 [main] INFO  utils.Log - Fetching temperature from UI...
+2024-12-04 13:31:54 [main] INFO  utils.Log - Temperature from UI: 0.0
+2024-12-04 13:31:54 [main] INFO  utils.Log - Fetching temperature from API...
+2024-12-04 13:31:58 [main] INFO  utils.Log - Temperature from API: -0.33
+2024-12-04 13:31:58 [main] INFO  utils.Log - Comparing temperatures...
+2024-12-04 13:31:58 [main] INFO  utils.Log - Weather comparison test passed.
+2024-12-04 13:33:37 [main] INFO  utils.Log - Starting weather comparison test for city: Delhi
+2024-12-04 13:33:38 [main] INFO  utils.Log - Fetching temperature from UI...
+2024-12-04 13:34:11 [main] ERROR utils.Log - Test failed: Expected condition failed: waiting for element to be clickable: By.xpath: (//p[text()='New York'])[1] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\komal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62028}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62028/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b6ca3881b2005be7b4457f863574355b
+2024-12-04 13:37:14 [main] INFO  utils.Log - Starting weather comparison test for city: Delhi
+2024-12-04 13:37:16 [main] INFO  utils.Log - Fetching temperature from UI...
+2024-12-04 13:37:49 [main] ERROR utils.Log - Test failed: Expected condition failed: waiting for element to be clickable: By.xpath: (//p[text()='Delhi'])[1] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\komal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62432}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62432/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bef9d5159e842212f0a894ed8fd62754
+2024-12-04 13:48:06 [main] INFO  utils.Log - Starting weather comparison test for city: Delhi
+2024-12-04 13:48:07 [main] INFO  utils.Log - Fetching temperature from UI...
+2024-12-04 13:48:21 [main] INFO  utils.Log - Temperature from UI: 24.0
+2024-12-04 13:48:21 [main] INFO  utils.Log - Fetching temperature from API...
+2024-12-04 13:48:24 [main] INFO  utils.Log - Temperature from API: 26.05
+2024-12-04 13:48:24 [main] INFO  utils.Log - Comparing temperatures...
+2024-12-04 13:48:24 [main] ERROR utils.Log - Test failed: Temperature variance exceeded! UI: 24.00, API: 26.05, Variance: 2.00
+2024-12-04 14:00:28 [main] INFO  utils.Log - Starting weather comparison test for city: Delhi
+2024-12-04 14:00:30 [main] INFO  utils.Log - Fetching temperature from UI...
+2024-12-04 14:00:47 [main] INFO  utils.Log - Temperature from UI: 24.0
+2024-12-04 14:00:47 [main] INFO  utils.Log - Fetching temperature from API...
+2024-12-04 14:00:50 [main] INFO  utils.Log - Temperature from API: 26.05
+2024-12-04 14:00:50 [main] INFO  utils.Log - Comparing temperatures...
+2024-12-04 14:00:50 [main] ERROR utils.Log - Test failed: Temperature variance exceeded! UI: 24.00, API: 26.05, Variance: 2.00
+2024-12-04 14:06:31 [main] INFO  utils.Log - Starting weather comparison test for city: London
+2024-12-04 14:06:33 [main] INFO  utils.Log - Fetching temperature from UI...
+2024-12-04 14:06:47 [main] INFO  utils.Log - Temperature from UI: 5.0
+2024-12-04 14:06:47 [main] INFO  utils.Log - Fetching temperature from API...
+2024-12-04 14:06:51 [main] INFO  utils.Log - Temperature from API: 5.12
+2024-12-04 14:06:51 [main] INFO  utils.Log - Comparing temperatures...
+2024-12-04 14:06:51 [main] INFO  utils.Log - Weather comparison test passed.

@@ -21,18 +21,6 @@ public class AccuWeatherUI {
         this.driver = new ChromeDriver();
     }
 
-//    public double getTemperature(String city) {
-//        driver.get("https://www.accuweather.com/");
-//        WebElement searchBox = driver.findElement(By.cssSelector(".search-input"));
-//        searchBox.sendKeys(city);
-//        driver.findElement(By.cssSelector(".search-button")).click();
-//
-//        // Fetch temperature (assuming UI displays temp in °C)
-//        WebElement tempElement = driver.findElement(By.cssSelector(".temperature span"));
-//        String tempText = tempElement.getText().replace("°", "");
-//        driver.quit();
-//        return Double.parseDouble(tempText);
-//    }
 
     public double getTemperature(String city) throws InterruptedException {
         // Navigate to the AccuWeather homepage
@@ -47,11 +35,11 @@ public class AccuWeatherUI {
         searchBox.sendKeys(city);
         searchBox.sendKeys(Keys.ENTER);
         Thread.sleep(10000);
-        WebElement citySelected = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//p[text()='New York'])[1]")));
+        WebElement citySelected = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//p[@class='location-name' and contains(text(), '"+ city + "')])[1]")));
         citySelected.click();
 
         // Wait for the temperature element to be visible
-        WebElement tempElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class='header-city-link']//span[text()='5°']")));
+        WebElement tempElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class='header-city-link']//span[@class='header-temp']")));
         // Get the temperature text, remove the degree symbol, and parse the value
         String tempText = tempElement.getText().replaceAll("[°C]", "");
 
