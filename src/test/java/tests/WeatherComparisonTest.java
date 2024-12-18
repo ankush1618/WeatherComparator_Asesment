@@ -1,6 +1,7 @@
 package tests;
 
 import api.OpenWeatherAPI;
+import com.aventstack.extentreports.Status;
 import comparator.WeatherComparator;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -12,6 +13,8 @@ import org.testng.annotations.Test;
 import ui.AccuWeatherUI;
 import utils.ConfigReader;
 import utils.Log;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
 
 public class WeatherComparisonTest {
     private ExtentReports extent;
@@ -52,8 +55,12 @@ public class WeatherComparisonTest {
             test.info("Temperature from API: " + tempAPI);
 
             Log.info("Comparing temperatures...");
-            comparator.compareTemperatures(tempUI, tempAPI, allowedVariance);
-
+            String comparisonResult =comparator.compareTemperatures(tempUI, tempAPI, allowedVariance);
+            // Add table log to Extent Report
+            test.log(Status.INFO, MarkupHelper.createTable(new String[][] {
+                    {"City", "Variance", "UI Temperature", "API Temperature", "Comparison"},
+                    {city, String.valueOf(allowedVariance), String.valueOf(tempUI), String.valueOf(tempAPI), comparisonResult}
+            }, String.valueOf(ExtentColor.BLUE)));
             test.pass("Weather comparison test passed. UI: " + tempUI + ", API: " + tempAPI);
             test.info("Weather comparison test passed.");
         } catch (Exception e) {

@@ -2,4 +2,7 @@
     <reportName>Weather Comparison Test Report</reportName>
     <documentTitle>Weather Comparator Automation</documentTitle>
     <theme>dark</theme>
+    <chartVisibilityOnOpen>false</chartVisibilityOnOpen>
+    <enableOfflineMode>true</enableOfflineMode>
+    <encoding>utf-8</encoding>
 </configuration>

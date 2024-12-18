@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ParallelTestSuite" parallel="classes" thread-count="2">
+
+    <!-- Test Block 1 -->
+    <test name="WeatherTests">
+        <classes>
+            <class name="tests.WeatherComparisonTest" />
+        </classes>
+    </test>
+    <!-- Test Block 2 -->
+    <test name="WeatherTest">
+        <classes>
+            <class name="tests.WeatherTest" />
+        </classes>
+    </test>
+
+</suite>
